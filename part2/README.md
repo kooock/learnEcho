@@ -1,4 +1,4 @@
-# PART1. setup and hello world
+# PART2. URL params and Query params
 
 간단한 http 체크포인트를 만들고 요청시 parameter를 받습니다. 또한 문자열과 JSON으로 결과를 주는 예제입니다.
 
