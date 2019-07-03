@@ -10,3 +10,4 @@
 
 - part4. [Intro to Middlewares](./part4)
 
+- part5. [Basic Authentication Middleware](./part5)
