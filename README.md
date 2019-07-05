@@ -12,4 +12,4 @@
 
 - part5. [Basic Authentication Middleware](./part5)
 
-- part5. [Custom Middlewares](./part6)
+- part6. [Custom Middlewares](./part6)
