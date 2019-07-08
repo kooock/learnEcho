@@ -13,3 +13,5 @@
 - part5. [Basic Authentication Middleware](./part5)
 
 - part6. [Custom Middlewares](./part6)
+
+- part7. [Cookies](./part7)
