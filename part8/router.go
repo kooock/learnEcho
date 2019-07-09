@@ -26,9 +26,11 @@ func (r *router)Route() error{
 
 	r.e.GET("/", hello)
 	r.e.GET("/cats/:data",getCats)
+	r.e.GET("/login",login)
 	r.e.POST("/cats",addCat)
 	r.e.POST("/dogs",addDog)
 	r.e.POST("/hamsters",addHamster)
+
 
 	return nil
 }

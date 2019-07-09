@@ -15,3 +15,5 @@
 - part6. [Custom Middlewares](./part6)
 
 - part7. [Cookies](./part7)
+
+- part8. [JWT Authentication](./part8)

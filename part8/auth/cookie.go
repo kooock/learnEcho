@@ -1,4 +1,4 @@
-package cookie
+package auth
 
 import (
 	"github.com/labstack/echo"
@@ -27,3 +27,4 @@ func checkCookie(next echo.HandlerFunc) echo.HandlerFunc {
 	}
 
 }
+

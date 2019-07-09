@@ -6,6 +6,6 @@ import (
 )
 
 func mainCookie(c echo.Context) error{
-	return c.String(http.StatusOK,"you are on the secret cookie page!")
+	return c.String(http.StatusOK,"you are on the secret auth page!")
 }
 
