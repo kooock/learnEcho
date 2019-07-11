@@ -1,4 +1,4 @@
-# PART9. Refactoring 
+# PART10. Refactoring 
 
 지금까지 작성한 예제코드를 echo를 효율적으로 쓰기 위해 리펙토링을 하였습니다.
 
