@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	"learnEcho/part6/admin"
+	"learnEcho/part06/admin"
 )
 
 

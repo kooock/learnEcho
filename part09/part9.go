@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	"learnEcho/part7/admin"
-	"learnEcho/part7/cookie"
+	"learnEcho/part09/admin"
+	"learnEcho/part09/auth"
 )
 
 
@@ -23,7 +23,7 @@ func main()  {
 	adminRouter.SetAdminObj(ad)
 	adminRouter.Route()
 
-	cookieRouter := cookie.NewCookieRouter(e,"/auth")
+	cookieRouter := auth.NewAuthRouter(e,"/cookie","/jwt")
 
 	cookieRouter.Route()
 

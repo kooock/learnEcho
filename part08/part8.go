@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/labstack/echo"
-	"learnEcho/part8/admin"
-	"learnEcho/part8/auth"
+	"learnEcho/part08/admin"
+	"learnEcho/part08/auth"
 )
 
 

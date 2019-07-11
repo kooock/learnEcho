@@ -25,7 +25,7 @@ func (r *router)Route() error{
 	}
 
 	r.e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
-		Root:"./part9/static",
+		Root:"./part09/static",
 	}))
 
 	r.e.GET("/hello", hello)

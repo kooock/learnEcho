@@ -7,7 +7,7 @@ import (
 
 func SetMainMiddlewares(e *echo.Echo)  {
 	e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
-		Root:"./part9/static",
+		Root:"./part09/static",
 	}))
 
 	e.Use(ServerHeader)

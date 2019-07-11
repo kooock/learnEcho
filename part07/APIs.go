@@ -4,10 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/labstack/echo"
-	"learnEcho/part9/auth"
 	"io/ioutil"
-	"learnEcho/part9/user"
-	"log"
+	"learnEcho/part07/user"
 	"net/http"
 	"time"
 )
@@ -97,28 +95,7 @@ func login(c echo.Context) error {
 
 		c.SetCookie(cookie)
 
-		//create jwt token
-		token,err := auth.CreateJwtToken()
-
-		if err != nil {
-			log.Println("Error create JWT token",err)
-			return c.String(http.StatusInternalServerError,"something went wrong")
-		}
-
-		jwtCookie := new(http.Cookie)
-
-		jwtCookie.Name = "JWTCookie"
-		jwtCookie.Value = token
-		jwtCookie.Expires = time.Now().Add(48 * time.Hour)
-
-		c.SetCookie(jwtCookie)
-
-
-
-		return c.JSON(http.StatusOK, map[string]string{
-			"message" : "You were logged in",
-			"token" : token,
-		})
+		return c.String(http.StatusOK,"You were logged in")
 	}
 
 	return c.String(http.StatusUnauthorized,"YOur username or password were wrong")
